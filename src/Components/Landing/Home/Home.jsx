@@ -35,14 +35,14 @@ const Home = () => {
                 marginTop: '10px'
               }}/>
             </div>
-            <ul className="menu" style={{
+            {/* <ul className="menu" style={{
               marginLeft: '30px',
             }}>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/dashboard">Services</a></li>
             <li><a href="/contact">Contact</a></li>
-            </ul>
+            </ul> */}
             <div className="buttons" >
               {
                 !loading &&
@@ -61,8 +61,8 @@ const Home = () => {
           </nav>
           <div className="text-content">
             <div className="text-area">
-              <h2>Learn To Enjoy,<br/>Every Moment Of Your Life</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum facere in nam, officiis aspernatur consectetur aliquid sequi possimus et. Sint.</p>
+              <h2>Worried about Stock?,<br/>We got that for you!</h2>
+              <p>Effortlessly manage your product inventory with our intuitive stock tracking platform. Stay informed, avoid stockouts, and boost efficiency with real-time updates on your diverse range of products.</p>
               {/* <Link to='login' onClick={()=>setTab("../login")} style={{
                 textDecoration: 'none'
               }}> */}
