@@ -329,19 +329,18 @@ const Dashboard = () => {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle  id="alert-dialog-title">
-                {"Do you want to save the Tiles info?"}
+                {"Are you sure you want to log out ?"}
                 </DialogTitle>
-                <DialogContent>
+                {/* <DialogContent>
                 <DialogContentText id="alert-dialog-description">
-                    Are you sure you want to log out ?
                 </DialogContentText>
-                </DialogContent>
+                </DialogContent> */}
                 <DialogActions>
-                <Button onClick={handleClose}>Cancel</Button>
+                <Button onClick={handleClose}>No</Button>
                 <Button 
                 onClick={logoutHandler} 
                 autoFocus>
-                    Save
+                    Yes
                 </Button>
                 </DialogActions>
             </Dialog>
