@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    gap: 400px;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("../../LandingPage/Assets/hero-bg.jpg");
+    background-position: center;
+    background-size: cover; */
+    background-image: linear-gradient(315deg, var(--first-color) 0%, var(--second-color) 74%);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    /* padding: 25px 10px 15px; */
+    padding: 25px 0px 0px;
+    /* height: 24px;
+    width: 110px */
+}
+
+.logo img {
+    width: 43px;
+    height: 24px;
+    width: 110px;
+    /* border-radius: 50%; */
+}
+
+.sidebar:hover .logo img{
+    width: 230px;
+    height: 50px;
+}
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    /* background: #fff; */
+    background: rgba(255, 255, 255, 0.3);
+    border-right: 4px solid rgb(52, 174, 235);
+    border-radius: 4px;
+}
+
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}

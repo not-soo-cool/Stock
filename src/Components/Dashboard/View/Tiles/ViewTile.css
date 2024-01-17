@@ -1,0 +1,118 @@
+
+/* .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .tile section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+} */
+
+.tileview {
+    /* border: 2px solid red; */
+    position: relative;
+    left: 300px;
+    top: 70px;
+    padding: 15px 60px 15px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-radius: 10px;
+    /* width: 1100px; */
+    max-width: 1100px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.tileview h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    /* color: #8f2c24; */
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.tileview .input-box {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tileview .input-box input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: .85em;
+    /* color: #3b7ca5; */
+    color: black;
+    border-radius: 5px;
+    /* background: #fff; */
+    background: rgba(0, 0, 0, 0.1);
+    /* background: transparent; */
+    border: none;
+    border-right: 2px solid rgb(11, 59, 191);
+    border-left: 2px solid rgb(131, 136, 151);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tileview .input-box input:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.tileview .input-box ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tileview .input-box #btn {
+    position: relative;
+    border: none;
+    outline: none;
+    background: #017ac6;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.tileview .input-box #btn:hover {
+    background: #009afa;
+}
+
+.tileview .sixth {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.tileview .group a {
+    font-size: 1.05em;
+    color: #017ac6;
+    text-decoration: none;
+}
+
+.delete {
+    margin: 12px 0px 0px 5px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+

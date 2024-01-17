@@ -1,0 +1,171 @@
+
+.sign-in {
+    height: 100vh;
+}
+
+.sign-in section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--first-color);
+    background-image: linear-gradient(315deg, var(--first-color) 0%, var(--second-color) 74%);
+}
+
+.sign-in section::before,
+.sign-in section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.sign-in section::before{
+    clip-path: circle(25% at left 6%);
+    background: linear-gradient(135deg, var(--circle-first-color) 10%, var(--circle-second-color) 100%);
+}
+
+.sign-in section::after{
+    clip-path: circle(25% at right 80%);
+    background: linear-gradient(135deg, var(--circle-second-color) 10%, var(--circle-first-color) 100%);
+}
+
+.sign-inok {
+    position: relative;
+    /* left: 80px; */
+    padding: 15px 60px 15px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-radius: 10px;
+    width: 550px;
+    max-height: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.sign-inok h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    /* color: #8f2c24; */
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.sign-inok .input-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sign-inok .input-box input {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: .85em;
+    /* color: #3b7ca5; */
+    color: black;
+    border-radius: 5px;
+    /* background: #fff; */
+    background: rgba(0, 0, 0, 0.1);
+    /* background: transparent; */
+    border: none;
+    border-right: 2px solid rgb(11, 59, 191);
+    border-left: 2px solid rgb(131, 136, 151);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sign-inok .input-box input:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.sign-inok .input-box ::placeholder {
+    color: black;
+}
+
+.sign-inok .input-box .google_btn {
+    /* position: absolute; */
+    left: 0px;
+    width: 430px;
+    /* width: 100%; */
+    height: 36px;
+    /* height: 100%; */
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: #2c444e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sign-inok .input-box .google_btn > img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.sign-inok .input-box a{
+    text-decoration: none;
+}
+
+.sign-inok .input-box .google_btn > span{
+    margin-left: 10px;
+}
+
+.sign-inok .input-box #btn {
+    outline: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+}
+
+.sign-inok .input-box #btn:hover {
+    transform: scale(0.98);
+}
+
+.sign-inok .seventh {
+    display: flex;
+    justify-content: center;
+    /* padding-right: 10px; */
+}
+
+.sign-inok .group a {
+    font-size: 1.05em;
+    color: #000000;
+    /* text-decoration: none; */
+}
+
+.sign-inok .group a:hover {
+    color: #0d38ac;
+    text-decoration: none;
+}

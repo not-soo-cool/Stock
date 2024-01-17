@@ -1,0 +1,45 @@
+.ordercard-caraousel {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+    gap: 15px;
+    padding: 26px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 270px;
+    top: 125px;
+}
+
+.ordercard-caraousel .ordercard-container {
+    padding: 0 10px;
+    display: flex;
+    gap: 60px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.ordercard-caraousel .pre-btn, .ordercard-caraousel .next-btn{
+    border: none;
+    /* border: 2px solid black; */
+    color: black;
+    width: 20px;
+    height: 10%;
+    position: absolute;
+    z-index: 5;
+}
+
+.ordercard-caraousel .next-btn{
+    right: 0;
+}
+
+.ordercard-caraousel .pre-btn{
+    left: 0;
+}
+
+.ordercard-caraousel .pre-btn:hover, .ordercard-caraousel .next-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

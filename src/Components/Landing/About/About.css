@@ -1,0 +1,104 @@
+
+.about-section{
+    /* position: relative; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.about-section .about-header{
+    height: 85vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.about-section .about-header h1{
+    /* padding: 0px 250px; */
+    font-size: 40px;
+}
+
+.about-section .about-header h2{
+    padding: 0px 150px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.about-section .about-header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 2;
+    gap: 80px;
+    color: #000;
+}
+
+.about-section .about-header .container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    color: #000;
+}
+
+.about-section .about-header .container .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section .about-header .container .card .content .show-hover{
+    transform: translateY(100px);
+    opacity: 0;
+    display: none;
+}
+
+.about-section .about-header .container .card:hover .show-hover{
+    transform: translateY(0px);
+    opacity: 1;
+    display: block;
+}
+
+.about-section .about-header .container .card:hover .show-on{
+    transform: translateY(0px);
+    opacity: 0;
+    display: none;
+}
+
+.about-section .about-header .container .card .content h3{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #000;
+    z-index: 1;
+}
+
+.about-section .about-header .container .card .content p{
+    font-size: 1em;
+    /* color: #fff; */
+    color: #000;
+    font-weight: 300;
+}
