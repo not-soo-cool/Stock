@@ -16,6 +16,27 @@ const Home = () => {
 
   const dispatch = useDispatch();
 
+  const handleHome = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleAbout = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleContact = () => {
+    window.scrollTo({
+      top: 2*window.innerHeight,
+      behavior: 'smooth'
+    })
+  }
+
   useEffect(() => {
     dispatch(loadUser());
   }, [dispatch]);
@@ -35,14 +56,14 @@ const Home = () => {
                 marginTop: '10px'
               }}/>
             </div>
-            {/* <ul className="menu" style={{
+            <ul className="menu" style={{
               marginLeft: '30px',
             }}>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/dashboard">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-            </ul> */}
+            <li onClick={handleHome}><a href="#">Home</a></li>
+            <li onClick={handleAbout}><a href="#">About</a></li>
+            {/* <li><a href="/dashboard">Services</a></li> */}
+            <li onClick={handleContact}><a href="#">Contact</a></li>
+            </ul>
             <div className="buttons" >
               {
                 !loading &&
@@ -61,7 +82,7 @@ const Home = () => {
           </nav>
           <div className="text-content">
             <div className="text-area">
-              <h2>Worried about Stock?,<br/>We got that for you!</h2>
+              <h2>Worried about Stock ?<br/>We got that for you!!</h2>
               <p>Effortlessly manage your product inventory with our intuitive stock tracking platform. Stay informed, avoid stockouts, and boost efficiency with real-time updates on your diverse range of products.</p>
               {/* <Link to='login' onClick={()=>setTab("../login")} style={{
                 textDecoration: 'none'
@@ -70,7 +91,7 @@ const Home = () => {
                 padding: '10px 12px',
                 display: 'flex',
                 alignItems: 'center',
-              }}>
+              }} onClick={handleAbout}>
                 Know More &nbsp; <ArrowForwardIcon fontSize='small' sx={{color: 'white'}} />
               </button>
               {/* </Link> */}
