@@ -45,7 +45,7 @@ const Dashboard = () => {
     const [createOrder, setCreateOrder] = useState(false)
     const [viewOrder, setViewOrder] = useState(false)
 
-    const { loading: authLoading, error: authError, message: authMessage } = useSelector(state => state.auth)
+    const { loading: authLoading, error: authError, message: authMessage, isAuthenticated } = useSelector(state => state.auth)
 
     const { loading, error, message } = useSelector(state => state.user)
 
@@ -159,10 +159,11 @@ const Dashboard = () => {
         e.preventDefault();
         dispatch(logoutUser());
         await toast.success("Logged out successfully", toastOptions);
-        // if(window.location.pathname.toString() === '/dashboard'){
-        //   // setHref(true);
-        //   window.location.pathname = '/';
-        // }
+        setTimeout(() => {
+            if(window.location.pathname.toString() === '/dashboard' && !isAuthenticated){
+              window.location.pathname = '/';
+            }
+        }, 3000)
     }
 
     useEffect(() => {

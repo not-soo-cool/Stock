@@ -40,10 +40,12 @@ const Login = () => {
         e.preventDefault();
 
         dispatch(loginUser(email, password));
-        if(window.location.pathname.toString() === '/login'){
-          // setHref(true);
-          window.location.pathname = '/';
-        }
+
+        setTimeout(() => {
+          if(window.location.pathname.toString() === '/login' && isAuthenticated){
+            window.location.pathname = '/';
+          }
+        }, 3000)
     }
 
     useEffect(() => {
