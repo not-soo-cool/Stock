@@ -45,7 +45,7 @@ const Login = () => {
           if(window.location.pathname.toString() === '/login' && isAuthenticated){
             window.location.pathname = '/';
           }
-        }, 3000)
+        }, 1000)
     }
 
     useEffect(() => {
